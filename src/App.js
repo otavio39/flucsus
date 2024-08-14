@@ -53,14 +53,14 @@ function App() {
           </div>
         </div>
       </div>
-      <div className={styles.Clip}></div>
+      <div className={styles.Clip}/>
       <div className={styles.Main2}>
         <div className={styles.Main2_Container}>
           <h3 className={styles.titleblack}>Aqui você tem <strong style={{ color: '#B1DF1E', fontWeight: '900' }}>todas as soluções de pagamentos</strong> para o seu negócio digital</h3>
           <button className={styles.button} onClick={() => handleRegisterButtonClick()}>Cadastre-se agora</button>
         </div>
       </div>
-      <div className={styles.Main3}>
+      <div className={styles.Main3} id='Parceiros'>
         <div className={styles.Main3_Container}>
           <h3 className={styles.titleblack}>Facilitamos seu crescimento com nossos <strong style={{ fontWeight: '900' }}>parceiros e integrações</strong></h3>
           <Esteira/>
@@ -102,7 +102,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className={styles.Main5}>
+      <div className={styles.Main5} id='Vantagens'>
         <div className={styles.Main5_Container}>
           <h3 className={styles.titleblack}>Por que <strong style={{ fontWeight: '900' }}>escolher a Flucsus?</strong></h3>
           <div className={styles.Main5_Card_Content}>
@@ -146,16 +146,16 @@ function App() {
           </div>
         </div>
       </div>
-      <div className={styles.Main7}>
+      <div className={styles.Main7} id='Sistema'>
         <div className={styles.Main7_Inner}>
           <div className={styles.Main7_Container}>
             <div className={styles.Main7_Text_Content}>
               <h3 className={styles.titleblack}>Sistema <strong style={{ fontWeight: '900' }}>inteligente de adquirentes</strong></h3>
               <div className={styles.Main7_List_Content}>
-                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Antecipação de Vendas em D+2</strong>: Antecipe suas vendas em cartão em até D+2, melhorando seu fluxo de caixa e garantindo mais agilidade para o seu negócio.</p>
-                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Saques Automáticos e Pix em D+0</strong>: Receba de forma rápida e eficiente com saques automáticos e Pix em D+0. *A liberação está sujeita à análise do seu negócio.</p>
-                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Multi-adquirente</strong>: Aumente a taxa de aprovação de suas transações em até 5 vezes com nosso sistema multi-adquirente, que distribui suas vendas entre diversas adquirentes para maximizar suas aprovações.</p>
-                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Proteção contra Chargebacks</strong>: Minimize riscos com nosso sistema avançado de proteção contra disputas de chargebacks, garantindo mais segurança e estabilidade para suas transações.</p>
+                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Antecipação de Vendas em D+2<strong className={styles.Strong1}>:</strong></strong><strong className={styles.Strong2}>:</strong> Antecipe suas vendas em cartão em até D+2, melhorando seu fluxo de caixa e garantindo mais agilidade para o seu negócio.</p>
+                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Saques Automáticos e Pix em D+0<strong className={styles.Strong1}>:</strong></strong><strong className={styles.Strong2}>:</strong> Receba de forma rápida e eficiente com saques automáticos e Pix em D+0. *A liberação está sujeita à análise do seu negócio.</p>
+                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Multi-adquirente<strong className={styles.Strong1}>:</strong></strong><strong className={styles.Strong2}>:</strong> Aumente a taxa de aprovação de suas transações em até 5 vezes com nosso sistema multi-adquirente, que distribui suas vendas entre diversas adquirentes para maximizar suas aprovações.</p>
+                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Proteção contra Chargebacks<strong className={styles.Strong1}>:</strong></strong><strong className={styles.Strong2}>:</strong> Minimize riscos com nosso sistema avançado de proteção contra disputas de chargebacks, garantindo mais segurança e estabilidade para suas transações.</p>
               </div>
               <div>
                 <button className={styles.button} onClick={() => handleRegisterButtonClick()}>Cadastre-se agora</button>

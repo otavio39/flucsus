@@ -194,6 +194,7 @@
 
   .Main2 {
     padding: 30px 0 30px 0;
+    margin-top: -35px;
   }
 
   .Main2_Container {
@@ -337,6 +338,21 @@
     text-align: center;
     padding-bottom: 70px;
   }
+
+  .Main7_List_Content p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Strong1 {
+    color: #717171;
+  }
+
+  .Strong2 {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1276px) {
@@ -345,7 +361,7 @@
       url(./Images/Main1BackgroundMask2.png),
       url(./Images/Main1BackgroundMask.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: top 220px right 0px, left top;
+    background-position: top 220px right -15px, left top;
     overflow: hidden;
   }
 
@@ -433,11 +449,18 @@
   .Main7_Text_Content {
     margin: 150px 0 150px 0;
   }
+
+  .Strong1 {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 451px) and (max-width: 1275px) {
   .Main1_Image_Content {
     margin-top: 60px;
+  }
+
+  .Main1_Image_Content img {
   }
 
   .Main1_Container {
@@ -641,8 +664,6 @@
 
 
 
-
-.Main3 {}
 
 .Main3_Container {
   max-width: 1250px;
