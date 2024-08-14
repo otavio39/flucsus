@@ -52,14 +52,12 @@
 }
 
 .titleblack {
-  font-size: 30px;
   color: #212121;
   font-weight: 500;
   margin: 0;
 }
 
 .titlewhite {
-  font-size: 30px;
   color: white;
   font-weight: 500;
   margin: 0;
@@ -91,6 +89,14 @@
     padding: 0 50px 0 50px;
     max-width: 1250px;
     margin: 0 auto;
+  }
+
+  .titleblack {
+    font-size: 30px;
+  }
+  
+  .titlewhite {
+    font-size: 30px;
   }
 
   .titlebig {
@@ -149,6 +155,14 @@
     padding: 0 20px 0 20px;
     margin: 0 auto;
   }
+  
+  .titleblack {
+    font-size: 25px;
+  }
+  
+  .titlewhite {
+    font-size: 25px;
+  }
 
   .titlebig {
     font-size: 33px;
@@ -198,10 +212,6 @@
 
   .Main6_Container {
     padding: 0 20px 0 20px;
-  }
-
-  .Main6_Text_Content h3 {
-    font-size: 28px;
   }
 
   .ProgressBar {
