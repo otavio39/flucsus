@@ -25,18 +25,26 @@ function App() {
         </div>
         <div className={styles.Main1_Inner}>
           <div className={styles.Main1_Container}>
-            <div className={styles.Main1_Image_Content}></div>
             <div className={styles.Main1_Text_Content}>
               <div className={styles.Main1_Text_Sub_Content}>
-                <h1 className={styles.titlebig}>Conectando fluxos, <strong style={{ color: 'black' }}>simplificando pagamentos</strong></h1>
+                <div>
+                  <h1 className={styles.titlebig}>Conectando fluxos,</h1>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <h1 className={styles.titlebig}><strong style={{ color: 'black', position: 'relative' }}>simplificando pagamentos</strong></h1>
+                    <div className={styles.H1Bar}/>
+                  </div>
+                </div>
                 <h2 className={styles.paragraphbig}>Tenha resultados extraordinários e veja seu negócio prosperar além do que você sempre sonhou.</h2>
                 <div>
                   <button className={styles.buttongreen}>Cadastre-se agora</button>
                 </div>
               </div>
               <div>
-                <img src={Mouser} draggable={false}/>
+                <img src={Mouser} draggable={false} className={styles.Mouser}/>
               </div>
+            </div>
+            <div className={styles.Main1_Image_Content}>
+              <img src={Main1Image}/>
             </div>
           </div>
         </div>
