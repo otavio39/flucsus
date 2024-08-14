@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
   font-family: "Lato", sans-serif;
@@ -81,7 +81,7 @@
 .paragraphblue {
   color: #1C1999;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 900;
   margin: 0;
 }
 
@@ -106,8 +106,8 @@
     margin: 0;
   }
 
-  .Main1_Container {
-    padding: 0 50px 0 50px;
+  .Main1_Text_Sub_Content {
+    padding-top: 40px;
   }
 
   .Main2 {
@@ -150,7 +150,7 @@
     display: none;
   }
 
-  .Main7_Container {
+  .Main7_Text_Content {
     padding: 0 50px 0 50px;
   }
 }
@@ -175,8 +175,21 @@
     margin: 0;
   }
 
+  .Main1 {
+    background-size: auto, auto;
+    background-position: top 110px right 0px, left top;
+  }
+
   .Main1_Container {
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+  }
+
+  .Main1_Text_Sub_Content {
+    padding-top: 30px;
+  }
+
+  .Main1_Image_Content {
+    margin-top: 50px;
   }
 
   .Main2 {
@@ -236,7 +249,7 @@
     padding-top: 30px;
   }
 
-  .Main7_Container {
+  .Main7_Text_Content {
     padding: 0 20px 0 20px;
   }
 
@@ -251,7 +264,6 @@
       url(./Images/Main1BackgroundMask2Mini.png),
       url(./Images/Main1BackgroundMask.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: top 150px right 0px, left top;
   }
 
   .Main1_Container {
@@ -340,6 +352,7 @@
   .Main1_Container {
     justify-content: flex-end;
     position: relative;
+    padding: 0 50px 0 50px;
   }
 
   .Main1_Image_Content {
@@ -354,8 +367,16 @@
     gap: 100px;
   }
 
+  .Main1_Text_Sub_Content {
+    padding-top: 90px;
+  }
+
   .Main3_Container {
     padding: 0 50px 0 50px;
+  }
+
+  .Main3_Container h3 {
+    min-width: 450px;
   }
 
   .Main4_Inner {
@@ -382,7 +403,13 @@
   }
   
   .Main6_Inner {
-    clip-path: ellipse(180% 610px at 50% 100%);
+    background-image: 
+      url(./Images/Main6BackgroundMask2.png),
+      url(./Images/Main6BackgroundMask.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left;
+    background-size: auto, cover;
+    clip-path: ellipse(180% 622px at 50% 100%);
     padding: 50px 0 50px 0;
   }
 
@@ -408,7 +435,22 @@
   }
 }
 
+@media only screen and (min-width: 451px) and (max-width: 1275px) {
+  .Main1_Image_Content {
+    margin-top: 60px;
+  }
+
+  .Main1_Container {
+    padding: 0 20px 0 20px;
+  }
+}
+
 @media only screen and (min-width: 451px) and (max-width: 650px) {
+  .Main1 {
+    background-size: 250px, auto;
+    background-position: top 140px right 0px, left top;
+  }
+
   .Main3_Container h3 {
     padding: 0 50px 0 50px;
   }
@@ -418,19 +460,24 @@
   }
 }
 
-@media only screen and (min-width: 451px) and (max-width: 624px) {
+@media only screen and (min-width: 451px) and (max-width: 590px) {
   .H1Bar {
-    max-width: 270px;
+    max-width: 290px;
   }
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 427px) {
   .H1Bar {
-    max-width: 200px;
+    max-width: 215px;
   }
 }
 
 @media only screen and (min-width: 651px) and (max-width: 1275px) {
+  .Main1 {
+    background-size: 400px, auto;
+    background-position: top 150px right 0px, left top;
+  }
+
   .Main3_Container h3 {
     padding: 0 50px 0 50px;
   }
@@ -440,6 +487,12 @@
   }
   
   .Main6_Inner {
+    background-image: 
+      url(./Images/Main6BackgroundMask4.png),
+      url(./Images/Main6BackgroundMask3.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 380px right 20px, center;
+    background-size: auto, cover;
     clip-path: ellipse(180% 610px at 50% 64%);
     padding: 150px 0 60px 0;
   }
@@ -459,6 +512,12 @@
   }
   
   .Main6_Inner {
+    background-image: 
+      url(./Images/Main6BackgroundMask4.png),
+      url(./Images/Main6BackgroundMask3.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 340px right 20px, center;
+    background-size: auto, cover;
     padding: 70px 0 0 0;
   }
 
@@ -524,7 +583,7 @@
 .H1Bar {
   background-color: #B1DF1E;
   height: 12px;
-  width: 105%;
+  width: 106%;
   border-radius: 100px;
   margin-top: -13px;
 }
@@ -555,7 +614,6 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-top: 90px;
 }
 
 
@@ -823,12 +881,6 @@
 }
 
 .Main6_Inner {
-  background-image: 
-    url(./Images/Main6BackgroundMask2.png),
-    url(./Images/Main6BackgroundMask.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: right, left;
-  background-size: auto, cover;
   background-color: #1C1999;
   top: 0;
   bottom: 0;

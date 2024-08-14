@@ -16,6 +16,10 @@ import Main6Image from './Images/Main6Image.png'
 import Main6ImageMini from './Images/Main6ImageMini.png'
 import Main7Image from './Images/Main7Image.png'
 
+const handleRegisterButtonClick = (url) => {
+  window.location.href = 'https://app.flucsus.com.br/auth/register';
+};
+
 function App() {
   return (
     <div className={styles.Container}>
@@ -30,13 +34,13 @@ function App() {
                 <div>
                   <h1 className={styles.titlebig}>Conectando fluxos,</h1>
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <h1 className={styles.titlebig}><strong style={{ color: 'black', position: 'relative' }}>simplificando pagamentos</strong></h1>
+                    <h1 className={styles.titlebig}><strong style={{ position: 'relative', fontWeight: '900' }}>simplificando pagamentos</strong></h1>
                     <div className={styles.H1Bar}/>
                   </div>
                 </div>
                 <h2 className={styles.paragraphbig}>Tenha resultados extraordinários e veja seu negócio prosperar além do que você sempre sonhou.</h2>
                 <div>
-                  <button className={styles.buttongreen}>Cadastre-se agora</button>
+                  <button className={styles.buttongreen} onClick={() => handleRegisterButtonClick()}>Cadastre-se agora</button>
                 </div>
               </div>
               <div>
@@ -52,13 +56,13 @@ function App() {
       <div className={styles.Clip}></div>
       <div className={styles.Main2}>
         <div className={styles.Main2_Container}>
-          <h3 className={styles.titleblack}>Aqui você tem <strong style={{ color: '#B1DF1E' }}>todas as soluções de pagamentos</strong> para o seu negócio digital</h3>
-          <button className={styles.button}>Cadastre-se agora</button>
+          <h3 className={styles.titleblack}>Aqui você tem <strong style={{ color: '#B1DF1E', fontWeight: '900' }}>todas as soluções de pagamentos</strong> para o seu negócio digital</h3>
+          <button className={styles.button} onClick={() => handleRegisterButtonClick()}>Cadastre-se agora</button>
         </div>
       </div>
       <div className={styles.Main3}>
         <div className={styles.Main3_Container}>
-          <h3 className={styles.titleblack}>Facilitamos seu crescimento com nossos <strong>parceiros e integrações</strong></h3>
+          <h3 className={styles.titleblack}>Facilitamos seu crescimento com nossos <strong style={{ fontWeight: '900' }}>parceiros e integrações</strong></h3>
           <Esteira/>
         </div>
       </div>
@@ -70,7 +74,7 @@ function App() {
             </div>
             <div className={styles.Main4_Text_Content}>
               <div className={styles.Main4_Title_Content}>
-                <h3 className={styles.titleblack}>Tudo que você <strong>precisa em um só lugar</strong></h3>
+                <h3 className={styles.titleblack}>Tudo que você <strong style={{ fontWeight: '900' }}>precisa em um só lugar</strong></h3>
                 <p className={styles.paragraphblack}>Conheça os benefícios que te esperam na Flucsus.</p>
               </div>
               <div className={styles.Main4_List_Content}>
@@ -92,7 +96,7 @@ function App() {
                 </div>
               </div>
               <div>
-                <button className={styles.button}>Cadastre-se agora</button>
+                <button className={styles.button} onClick={() => handleRegisterButtonClick()}>Cadastre-se agora</button>
               </div>
             </div>
           </div>
@@ -100,7 +104,7 @@ function App() {
       </div>
       <div className={styles.Main5}>
         <div className={styles.Main5_Container}>
-          <h3 className={styles.titleblack}>Por que <strong>escolher a Flucsus?</strong></h3>
+          <h3 className={styles.titleblack}>Por que <strong style={{ fontWeight: '900' }}>escolher a Flucsus?</strong></h3>
           <div className={styles.Main5_Card_Content}>
             <Cards
               image={Seguranca}
@@ -123,17 +127,17 @@ function App() {
               text="Com a Flucsus, você nunca está sozinho. Nosso suporte está sempre disponível para ajudar, 24 horas por dia, 7 dias por semana, garantindo que suas operações funcionem sem interrupções. Conte conosco para suporte imediato e soluções rápidas."
             />
           </div>
-          <button className={styles.button}>Cadastre-se agora</button>
+          <button className={styles.button} onClick={() => handleRegisterButtonClick()}>Cadastre-se agora</button>
         </div>
       </div>
       <div className={styles.Main6}>
         <div className={styles.Main6_Inner}>
           <div className={styles.Main6_Container}>
             <div className={styles.Main6_Text_Content}>
-              <h3 className={styles.titlewhite}>Na Flucsus, você conta com uma <strong>alta taxa de aprovação comprovada!</strong></h3>
+              <h3 className={styles.titlewhite}>Na Flucsus, você conta com uma <strong style={{ fontWeight: '900' }}>alta taxa de aprovação comprovada!</strong></h3>
               <img src={ProgressBar} draggable={false} style={{marginLeft: '-10px'}} className={styles.ProgressBar}/>
               <img src={ProgressBarMini} draggable={false} style={{marginLeft: '-10px'}} className={styles.ProgressBarMini}/>
-              <p className={styles.paragraphwhite}>Conversão testada, comprovada e garantida</p>
+              <p className={styles.paragraphwhite} style={{ fontWeight: '900' }}>Conversão testada, comprovada e garantida</p>
             </div>
             <div className={styles.Main6_Image_Content}>
               <img src={Main6Image} draggable={false} className={styles.Main6Image1}/>
@@ -146,15 +150,15 @@ function App() {
         <div className={styles.Main7_Inner}>
           <div className={styles.Main7_Container}>
             <div className={styles.Main7_Text_Content}>
-              <h3 className={styles.titleblack}>Sistema <strong>inteligente de adquirentes</strong></h3>
+              <h3 className={styles.titleblack}>Sistema <strong style={{ fontWeight: '900' }}>inteligente de adquirentes</strong></h3>
               <div className={styles.Main7_List_Content}>
-                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999' }}>Antecipação de Vendas em D+2</strong>: Antecipe suas vendas em cartão em até D+2, melhorando seu fluxo de caixa e garantindo mais agilidade para o seu negócio.</p>
-                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999' }}>Saques Automáticos e Pix em D+0</strong>: Receba de forma rápida e eficiente com saques automáticos e Pix em D+0. *A liberação está sujeita à análise do seu negócio.</p>
-                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999' }}>Multi-adquirente</strong>: Aumente a taxa de aprovação de suas transações em até 5 vezes com nosso sistema multi-adquirente, que distribui suas vendas entre diversas adquirentes para maximizar suas aprovações.</p>
-                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999' }}>Proteção contra Chargebacks</strong>: Minimize riscos com nosso sistema avançado de proteção contra disputas de chargebacks, garantindo mais segurança e estabilidade para suas transações.</p>
+                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Antecipação de Vendas em D+2</strong>: Antecipe suas vendas em cartão em até D+2, melhorando seu fluxo de caixa e garantindo mais agilidade para o seu negócio.</p>
+                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Saques Automáticos e Pix em D+0</strong>: Receba de forma rápida e eficiente com saques automáticos e Pix em D+0. *A liberação está sujeita à análise do seu negócio.</p>
+                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Multi-adquirente</strong>: Aumente a taxa de aprovação de suas transações em até 5 vezes com nosso sistema multi-adquirente, que distribui suas vendas entre diversas adquirentes para maximizar suas aprovações.</p>
+                <p className={styles.paragraphblack}><strong style={{ color: '#1C1999', fontWeight: '900' }}>Proteção contra Chargebacks</strong>: Minimize riscos com nosso sistema avançado de proteção contra disputas de chargebacks, garantindo mais segurança e estabilidade para suas transações.</p>
               </div>
               <div>
-                <button className={styles.button}>Cadastre-se agora</button>
+                <button className={styles.button} onClick={() => handleRegisterButtonClick()}>Cadastre-se agora</button>
               </div>
             </div>
             <div className={styles.Main7_Image_Content}>

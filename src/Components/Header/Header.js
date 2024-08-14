@@ -16,6 +16,10 @@ const MobileMenu = () => {
   const [isHovered3, setIsHovered3] = useState(false);
   const [isHovered4, setIsHovered4] = useState(false);
 
+  const handleLoginButtonClick = (url) => {
+    window.location.href = 'https://app.flucsus.com.br/auth/login';
+  };
+
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -68,7 +72,7 @@ const MobileMenu = () => {
             <p onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)} onClick={() => scrollToSection('Contato')}>Contato</p>
             <div className={`${styles.bar} ${isHovered4 ? styles.barAnimation : ""}`} />
           </div>
-          <button className={styles.loginbutton}>Login</button>
+          <button className={styles.loginbutton} onClick={() => handleLoginButtonClick()}>Login</button>
         </div>
       </div>
     </div>
@@ -81,6 +85,10 @@ const DesktopMenu = () => {
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
   const [isHovered4, setIsHovered4] = useState(false);
+
+  const handleLoginButtonClick = (url) => {
+    window.location.href = 'https://app.flucsus.com.br/auth/login';
+  };
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -116,7 +124,7 @@ const DesktopMenu = () => {
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '25px' }}>
-          <button className={styles.loginbutton}>Login</button>
+          <button className={styles.loginbutton} onClick={() => handleLoginButtonClick()}>Login</button>
         </div>
       </div>
     </div>

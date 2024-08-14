@@ -12,13 +12,13 @@
 .EsteiraContent {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 60px;
 }
 
 .EsteiraContent > div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 60px;
   animation: esteira 15s linear infinite;
 }
 
@@ -33,7 +33,7 @@
 
 @keyframes esteira {
   0% {
-    transform: translateX(20px);
+    transform: translateX(60px);
   }
   100% {
     transform: translateX(-100%);
@@ -42,10 +42,6 @@
 
 @media only screen and (min-width: 1276px) {
   .Esteira {
-      max-width: 690px;
+      max-width: 700px;
     }
-}
-
-@media only screen and (max-width: 1275px) {
-
 }
