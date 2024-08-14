@@ -4,6 +4,10 @@
   font-family: "Lato", sans-serif;
 }
 
+.Container img {
+    user-select: none;
+}
+
 .Container {
   letter-spacing: 0.6px;
   line-height: 1.4;
@@ -170,7 +174,7 @@
   }
 
   .titlebig {
-    font-size: 33px;
+    font-size: 25px;
     color: #1F1F1F;
     margin: 0;
   }
@@ -469,6 +473,10 @@
   .Strong1 {
     display: none;
   }
+
+  .H1Bar {
+    margin-top: -13px;
+  }
 }
 
 @media only screen and (min-width: 451px) and (max-width: 1275px) {
@@ -478,6 +486,10 @@
 
   .Main1_Container {
     padding: 0 20px 0 20px;
+  }
+
+  .H1Bar {
+    margin-top: -13px;
   }
 }
 
@@ -508,9 +520,16 @@
   }
 }
 
-@media only screen and (max-width: 427px) {
+@media only screen and (min-width: 332px) and (max-width: 450px) {
+    .H1Bar {
+      margin-top: -10px;
+    }
+  }
+
+@media only screen and (max-width: 332px) {
   .H1Bar {
-    max-width: 215px;
+    max-width: 170px;
+    margin-top: -9px;
   }
 }
 
@@ -627,7 +646,6 @@
   height: 12px;
   width: 106%;
   border-radius: 100px;
-  margin-top: -13px;
 }
 
 .Main1_Container {
