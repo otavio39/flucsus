@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './Esteira.module.css';
 
-import Adoorei from '../../Images/Esteira/adoorei.png';
-import Googleads from '../../Images/Esteira/googleads.png';
-import Meta from '../../Images/Esteira/meta.png';
-import Shopify from '../../Images/Esteira/shopify.png';
-import Tiktok from '../../Images/Esteira/tiktok.png';
-import Unicodrop from '../../Images/Esteira/unicodrop.png';
-import Utmify from '../../Images/Esteira/utmify.png';
-import Vega from '../../Images/Esteira/vega.png';
-import Voxuy from '../../Images/Esteira/voxuy.webp';
+import Adoorei from '../../Images/Esteira/adoorei.svg';
+import Googleads from '../../Images/Esteira/googleads.svg';
+import Meta from '../../Images/Esteira/meta.svg';
+import Shopify from '../../Images/Esteira/shopify.svg';
+import Tiktok from '../../Images/Esteira/tiktok.svg';
+import Unicodrop from '../../Images/Esteira/unicodrop.svg';
+import Utmify from '../../Images/Esteira/utmify.svg';
+import Vega from '../../Images/Esteira/vega.svg';
+import Voxuy from '../../Images/Esteira/voxuy.svg';
 
 const EsteiraLogos = () => {
   return (

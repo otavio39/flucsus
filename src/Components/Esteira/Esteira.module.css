@@ -12,14 +12,14 @@
 .EsteiraContent {
   display: flex;
   align-items: center;
-  gap: 60px; /* Default gap for larger screens */
+  gap: 60px;
 }
 
 .EsteiraContent > div {
   display: flex;
   align-items: center;
-  gap: 60px; /* Default gap for larger screens */
-  animation: move 15s linear infinite;
+  gap: 60px;
+  animation: esteira 15s linear infinite;
 }
 
 .EsteiraContainer img {
@@ -27,7 +27,7 @@
   flex-shrink: 0;
 }
 
-@keyframes move {
+@keyframes esteira {
   0% {
     transform: translateX(60px);
   }
@@ -36,23 +36,8 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .EsteiraContent {
-    gap: 30px; /* Reduce gap on mobile */
-  }
-
-  .EsteiraContent > div {
-    gap: 30px; /* Reduce gap on mobile */
-    animation: move 20s linear infinite; /* Slower animation on mobile */
-  }
-
-  .EsteiraContainer img {
-    max-width: 140px; /* Reduce image size on mobile */
-  }
-}
-
 @media only screen and (min-width: 1276px) {
   .Esteira {
-    max-width: 700px;
-  }
+      max-width: 700px;
+    }
 }
