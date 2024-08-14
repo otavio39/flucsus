@@ -47,7 +47,7 @@ const DesktopMenu = () => {
   return (
     <div className={styles.headerDesktop}>
       <img onClick={() => scrollToSection('Home')} src={Logo} alt="RapidChargeBack" draggable="false" style={{ userSelect: 'none' }} />
-      <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '40px' }}>
+      <div className={styles.RightContent} style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '40px'}}>
         <div className={styles.headerDesktopList}>
           <div>
             <p className={styles.paragraphblackmini} onMouseEnter={() => setIsHovered0(true)} onMouseLeave={() => setIsHovered0(false)} onClick={navigateToHome}>Home</p>
