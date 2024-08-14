@@ -22,10 +22,6 @@
   animation: esteira 15s linear infinite;
 }
 
-.EsteiraContent:hover > div {
-  animation-play-state: paused;
-}
-
 .EsteiraContainer img {
   max-width: 150px;
   flex-shrink: 0;

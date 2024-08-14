@@ -4,23 +4,24 @@ import { BsTelephone } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaInstagramSquare } from "react-icons/fa";
 import Logo from '../../Images/LogoWhite.svg';
-
-const handleButtonClick = () => {
-  window.location.href = 'https://wa.me/message/ZZLRN6L3L2S4B1';
-};
-
-const scrollToSection = (id) => {
-  const section = document.getElementById(id);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const [isHovered0, setIsHovered0] = useState(false);
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
+  const [isHovered4, setIsHovered4] = useState(false);
+  const [isHovered5, setIsHovered5] = useState(false);
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    window.location.href = 'https://wa.me/message/ZZLRN6L3L2S4B1';
+  };
+  
+  const scrollToSection = (id) => {
+    navigate(`/#${id}`);
+  };  
 
   return (
     <footer className={styles.Container}>
@@ -53,6 +54,18 @@ const Footer = () => {
                 <div onClick={() => scrollToSection('Vantagens')}>
                   <h4 onMouseEnter={() => setIsHovered1(true)} onMouseLeave={() => setIsHovered1(false)}>Vantagens</h4>
                   <div className={`${styles.bar} ${isHovered1 ? styles.barAnimation : ""}`} />
+                </div>
+            </div>
+            <div>
+                <div onClick={() => navigate('/politica-de-privacidade')}>
+                  <h4 onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)}>Política de privacidade</h4>
+                  <div className={`${styles.bar} ${isHovered4 ? styles.barAnimation : ""}`} />
+                </div>
+            </div>
+            <div>
+                <div onClick={() => navigate('/termos-de-uso')}>
+                  <h4 onMouseEnter={() => setIsHovered5(true)} onMouseLeave={() => setIsHovered5(false)}>Termos de uso</h4>
+                  <div className={`${styles.bar} ${isHovered5 ? styles.barAnimation : ""}`} />
                 </div>
             </div>
             <div>

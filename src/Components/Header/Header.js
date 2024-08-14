@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { SlMenu } from "react-icons/sl";
-import { CgClose } from 'react-icons/cg';
+import { useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
 import Logo from "../../Images/LogoBlack.svg";
 
@@ -27,16 +26,22 @@ const DesktopMenu = () => {
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
   const [isHovered4, setIsHovered4] = useState(false);
+  const navigate = useNavigate();
 
   const handleLoginButtonClick = (url) => {
     window.location.href = 'https://app.flucsus.com.br/auth/login';
   };
 
+  const handleButtonClick = () => {
+    window.location.href = 'https://wa.me/message/ZZLRN6L3L2S4B1';
+  };
+
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate(`/#${id}`);
+  };  
+  
+  const navigateToHome = () => {
+    navigate('/');
   };
 
   return (
@@ -45,7 +50,7 @@ const DesktopMenu = () => {
       <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '40px' }}>
         <div className={styles.headerDesktopList}>
           <div>
-            <p className={styles.paragraphblackmini} onMouseEnter={() => setIsHovered0(true)} onMouseLeave={() => setIsHovered0(false)} onClick={() => scrollToSection('Home')}>Home</p>
+            <p className={styles.paragraphblackmini} onMouseEnter={() => setIsHovered0(true)} onMouseLeave={() => setIsHovered0(false)} onClick={navigateToHome}>Home</p>
             <div className={`${styles.bar} ${isHovered0 ? styles.barAnimation : ""}`} />
           </div>
           <div>
@@ -61,7 +66,7 @@ const DesktopMenu = () => {
             <div className={`${styles.bar} ${isHovered3 ? styles.barAnimation : ""}`} />
           </div>
           <div>
-            <p className={styles.paragraphblackmini} onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)} onClick={() => scrollToSection('Contato')}>Contato</p>
+            <p className={styles.paragraphblackmini} onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)} onClick={handleButtonClick}>Contato</p>
             <div className={`${styles.bar} ${isHovered4 ? styles.barAnimation : ""}`} />
           </div>
         </div>

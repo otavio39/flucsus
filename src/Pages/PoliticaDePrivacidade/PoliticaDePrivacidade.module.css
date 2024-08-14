@@ -1,0 +1,70 @@
+.Container {
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 450px) {
+    .Main1_Container {
+        padding: 0 20px 0 20px;
+        padding-bottom: 30px;
+    }
+
+    .Main2_Container {
+        padding: 30px 20px 30px 20px;
+    }
+}
+
+@media only screen and (min-width: 451px) {
+    .Main1_Container {
+        padding: 0 50px 0 50px;
+        padding-bottom: 50px;
+    }
+
+    .Main2_Container {
+        padding: 50px;
+    }
+}
+
+.Main1 {
+    background-color: #FCFFF1;
+}
+
+.Main1_Container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.Main2_Container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.Main2_Container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.Main2_Container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.Main2_Container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.Main2_Container ul {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.Main2_Container li {
+    margin-bottom: 8px;
+}

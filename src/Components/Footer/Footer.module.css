@@ -92,6 +92,10 @@
     .Middle p {
         margin: 35px 0 0 0;
     }
+
+    .ContactButton {
+        margin-bottom: -35px;
+    }
 }
 
 @media only screen and (max-width: 1275px) {
@@ -125,9 +129,11 @@
     .Middle {
         padding: 0 25px 0 25px;
     }
+}
 
+@media only screen and (min-width: 1150px) {
     .List {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: 0 100px;
     }
 }
@@ -198,7 +204,7 @@
 
 .List {
     display: grid;
-    max-width: 700px;
+    max-width: 880px;
 }
 
 .List h4 {
