@@ -1,0 +1,244 @@
+@media only screen and (min-width: 451px) {
+    .Content {
+        padding: 0 50px 0 50px;
+    }
+
+    .ContactButton {
+        min-width: 222px;
+    }
+
+    .Top h3 {
+        font-size: 20px;
+    }
+
+    .Top p {
+        font-size: 20px;
+    }
+
+    .Middle p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .Content {
+        padding: 0 20px 0 20px;
+    }
+
+    .Top h3 {
+        font-size: 18px;
+    }
+
+    .Top p {
+        font-size: 16px;
+    }
+
+    .Middle p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 275px) {
+    .List {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 25px;
+    }
+}
+
+@media only screen and (min-width: 276px) and (max-width: 449px) {
+    .List {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 40px;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1275px) {
+    .List {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 40px;
+    }
+}
+
+@media only screen and (min-width: 1276px) {
+    .Container {
+        padding-bottom: 80px;
+    }
+
+    .Top {
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px;
+    }
+
+    .Middle {
+        gap: 35px;
+        margin: 30px 0 30px 0;
+    }
+
+    .Middle p {
+        margin: 35px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 1275px) {
+    .Container {
+        padding-bottom: 20px;
+    }
+
+    .Top {
+        flex-direction: column;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 30px;
+    }
+
+    .Top p {
+        max-width: 600px;
+    }
+
+    .Middle {
+        gap: 60px;
+        margin: 40px 0 40px 0;
+    }
+
+    .Middle p {
+        margin: 20px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .List {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 100px;
+    }
+}
+
+.Container {
+    background-color: #1C1999;
+    background-image: url(../../Images/FooterBackground.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.Content {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.ContactButton {
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 15px 20px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ContactButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+}
+
+.Top {
+    display: flex;
+    align-items: center;
+    max-width: 990px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Top h3 {
+    color: #BFEF26;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.Top p {
+    color: white;
+    margin: 0;
+}
+
+.Middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 25px 0 25px;
+}
+
+.Middle p {
+    color: white;
+}
+
+.List {
+    display: grid;
+    max-width: 700px;
+}
+
+.List h4 {
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.List img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+}
+
+.IconWhatsapp, .IconInstagram {
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.IconWhatsapp:hover {
+    color: #25D366;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.IconInstagram:hover {
+    color: #C13584;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.bar {
+    height: 2px;
+    background-color: #B1DF1E;
+    width: 0;
+    border-radius: 100px;
+    transition: width 0.3s;
+}
+  
+.barAnimation {
+    width: 100%;
+}
+  
