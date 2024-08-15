@@ -14,16 +14,22 @@ import Voxuy from '../../Images/Esteira/voxuy.svg';
 const EsteiraLogos = () => {
   useEffect(() => {
     const esteiraContent = document.querySelector(`.${styles.EsteiraContent}`);
-    
+
     if (esteiraContent) {
       for (let i = 0; i < 10; i++) {
         setTimeout(() => {
-          esteiraContent.click();
+          // Adiciona a classe de pausa
+          esteiraContent.classList.add(styles.active);
+          
+          // Remove a classe de pausa após 50ms
+          setTimeout(() => {
+            esteiraContent.classList.remove(styles.active);
+          }, 50); // Remove a classe 'active' após 50ms
+          
         }, i * 1000); // 1000ms = 1 segundo de intervalo entre os cliques
       }
     }
   }, []);
-
 
   return (
     <div className={styles.Esteira}>
