@@ -17,10 +17,14 @@ const EsteiraLogos = () => {
   useEffect(() => {
     const isMobile = window.innerWidth <= 450;
     if (isMobile && contentRef.current) {
-      // Simula dois cliques consecutivos
-      contentRef.current.click();
+      // Simula mouseover
+      const mouseEnterEvent = new Event('mouseenter');
+      contentRef.current.dispatchEvent(mouseEnterEvent);
+
+      // Simula mouseout logo em seguida
       setTimeout(() => {
-        contentRef.current.click();
+        const mouseLeaveEvent = new Event('mouseleave');
+        contentRef.current.dispatchEvent(mouseLeaveEvent);
       }, 100);
     }
   }, []);
