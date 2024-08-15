@@ -78,7 +78,11 @@ function App() {
         </div>
       </div>
       <div className={styles.Main3} id='Parceiros'>
+        <div className={styles.Main3_Container}>
+          <h3 className={styles.titleblack}>Facilitamos seu crescimento com nossos <strong style={{ fontWeight: '900' }}>parceiros e integrações</strong></h3>
           <Esteira/>
+          <EsteiraMec/>
+        </div>
       </div>
       <div className={styles.Main4}>
         <div className={styles.Main4_Inner}>
