@@ -10,6 +10,8 @@ import Unicodrop from '../../Images/Esteira/unicodrop.svg';
 import Utmify from '../../Images/Esteira/utmify.svg';
 import Vega from '../../Images/Esteira/vega.svg';
 import Voxuy from '../../Images/Esteira/voxuy.svg';
+import Smsfunnel from '../../Images/Esteira/smsfunnel.svg';
+import WebHooks from '../../Images/Esteira/webhooks.svg';
 
 const EsteiraLogos = () => {
   return (
@@ -18,6 +20,8 @@ const EsteiraLogos = () => {
         <div className={styles.EsteiraContent}>
             <div>
                 <img src={Shopify} draggable="false" alt="Shopify" />
+                <img src={Smsfunnel} draggable="false" alt="Smsfunnel" />
+                <img src={WebHooks} draggable="false" alt="WebHooks" />
                 <img src={Unicodrop} draggable="false" alt="Unicodrop" />
                 <img src={Voxuy} draggable="false" alt="Voxuy" />
                 <img src={Adoorei} draggable="false" alt="Adoorei" />
@@ -29,6 +33,8 @@ const EsteiraLogos = () => {
             </div>
             <div>
                 <img src={Shopify} draggable="false" alt="Shopify" />
+                <img src={Smsfunnel} draggable="false" alt="Smsfunnel" />
+                <img src={WebHooks} draggable="false" alt="WebHooks" />
                 <img src={Unicodrop} draggable="false" alt="Unicodrop" />
                 <img src={Voxuy} draggable="false" alt="Voxuy" />
                 <img src={Adoorei} draggable="false" alt="Adoorei" />
