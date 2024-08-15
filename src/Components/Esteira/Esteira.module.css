@@ -20,6 +20,8 @@
   align-items: center;
   gap: 60px;
   animation: esteira 15s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .EsteiraContent:active > div, .EsteiraContent.active > div {
@@ -29,6 +31,7 @@
 .EsteiraContainer img {
   max-width: 150px;
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 @keyframes esteira {
