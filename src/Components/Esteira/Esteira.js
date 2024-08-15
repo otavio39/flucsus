@@ -11,6 +11,8 @@ import Utmify from '../../Images/Esteira/utmify.svg';
 import Vega from '../../Images/Esteira/vega.svg';
 import Voxuy from '../../Images/Esteira/voxuy.svg';
 
+const logoImages = [Shopify, Unicodrop, Voxuy, Adoorei, Googleads, Meta, Tiktok, Utmify, Vega];
+
 const EsteiraLogos = () => {
   useEffect(() => {
     const esteiraContent = document.querySelector(`.${styles.EsteiraContent}`);
@@ -35,28 +37,13 @@ const EsteiraLogos = () => {
     <div className={styles.Esteira}>
       <div className={styles.EsteiraContainer}>
         <div className={styles.EsteiraContent}>
-            <div>
-                <img src={Shopify} draggable="false" alt="Shopify" />
-                <img src={Unicodrop} draggable="false" alt="Unicodrop" />
-                <img src={Voxuy} draggable="false" alt="Voxuy" />
-                <img src={Adoorei} draggable="false" alt="Adoorei" />
-                <img src={Googleads} draggable="false" alt="Googleads" />
-                <img src={Meta} draggable="false" alt="Meta" />
-                <img src={Tiktok} draggable="false" alt="Tiktok" />
-                <img src={Utmify} draggable="false" alt="Utmify" />
-                <img src={Vega} draggable="false" alt="Vega" />
+          {[...Array(2)].map((_, index) => (
+            <div key={index}>
+              {logoImages.map((logo, idx) => (
+                <img key={idx} src={logo} draggable="false" alt={`Logo ${idx + 1}`} />
+              ))}
             </div>
-            <div>
-                <img src={Shopify} draggable="false" alt="Shopify" />
-                <img src={Unicodrop} draggable="false" alt="Unicodrop" />
-                <img src={Voxuy} draggable="false" alt="Voxuy" />
-                <img src={Adoorei} draggable="false" alt="Adoorei" />
-                <img src={Googleads} draggable="false" alt="Googleads" />
-                <img src={Meta} draggable="false" alt="Meta" />
-                <img src={Tiktok} draggable="false" alt="Tiktok" />
-                <img src={Utmify} draggable="false" alt="Utmify" />
-                <img src={Vega} draggable="false" alt="Vega" />
-            </div>
+          ))}
         </div>
       </div>
     </div>
