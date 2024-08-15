@@ -1,4 +1,3 @@
-/* Esteira.module.css */
 .Esteira {
   width: 100%;
 }
@@ -37,18 +36,12 @@
     transform: translateX(60px);
   }
   100% {
-    transform: translateX(-calc(100% + 60px)); /* Ajuste para cobrir toda a largura */
+    transform: translateX(-100%);
   }
 }
 
 @media only screen and (min-width: 1276px) {
   .Esteira {
-    max-width: 700px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .Esteira {
-    display: none;
-  }
+      max-width: 700px;
+    }
 }
