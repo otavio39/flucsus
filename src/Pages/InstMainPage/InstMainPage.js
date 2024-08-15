@@ -120,9 +120,6 @@ function App() {
           </div>
         </div>
       </div>
-      <div>
-      <img src={Main6ImageMini} draggable={false} className={styles.Main6ImageMini2}/>
-      </div>
       <div className={styles.Main5} id='Vantagens'>
         <div className={styles.Main5_Container}>
           <h3 className={styles.titleblack}>Por que <strong style={{ fontWeight: '900' }}>escolher a Flucsus?</strong></h3>
