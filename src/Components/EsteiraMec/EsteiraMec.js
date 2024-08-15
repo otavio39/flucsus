@@ -15,16 +15,28 @@ const EsteiraLogos = () => {
   const esteiraRef = useRef(null);
 
   useEffect(() => {
-    if (esteiraRef.current) {
-      const scrollWidth = esteiraRef.current.scrollWidth;
-      esteiraRef.current.scrollLeft = scrollWidth / 2 - esteiraRef.current.clientWidth / 2;
-    }
+    const handleScrollToCenter = () => {
+      if (esteiraRef.current) {
+        const scrollWidth = esteiraRef.current.scrollWidth;
+        const clientWidth = esteiraRef.current.clientWidth;
+
+        if (scrollWidth > clientWidth) {
+          esteiraRef.current.scrollLeft = (scrollWidth - clientWidth) / 2;
+        }
+      }
+    };
+
+    // Adiciona um pequeno atraso para garantir que o layout esteja completo antes de ajustar o scroll
+    const timeoutId = setTimeout(handleScrollToCenter, 500);
+
+    // Cleanup function to clear timeout if the component unmounts
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
     <div className={styles.Esteira} ref={esteiraRef}>
         <div>
-        <img src={Unicodrop} draggable="false" alt="Unicodrop" />
+            <img src={Unicodrop} draggable="false" alt="Unicodrop" />
             <img src={Googleads} draggable="false" alt="Googleads" />
             <img src={Vega} draggable="false" alt="Vega" />
             <img src={Voxuy} draggable="false" alt="Voxuy" />
