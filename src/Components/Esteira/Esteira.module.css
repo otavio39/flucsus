@@ -1,18 +1,19 @@
 .titleblack {
-  color: #212121;
-  font-weight: 500;
+  color: black;
+  font-weight: bold;
+  line-height: 1.2;
   margin: 0;
 }
 
 @media only screen and (min-width: 451px) {
   .titleblack {
-      font-size: 30px;
+      font-size: 35px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .titleblack {
-      font-size: 25px;
+      font-size: 28px;
   }
 }
 
@@ -22,15 +23,12 @@
 
 
 
-.Esteira {
-  width: 100%;
-}
 
 .EsteiraContainer {
   user-select: none;
   display: flex;
   overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
 }
 
 .EsteiraContent {
@@ -44,6 +42,10 @@
   align-items: center;
   gap: 20px;
   animation: esteira 15s linear infinite;
+}
+
+.EsteiraContent:hover > div {
+  animation-play-state: paused; /* Pausar a animação quando o usuário passar o mouse */
 }
 
 .EsteiraContainer img {
@@ -75,12 +77,6 @@
 @media only screen and (max-width: 1275px) {
   .Esteira h3 {
       text-align: center;
-      margin: 0 auto 40px auto;
+      margin-bottom: 30px;
   }
-}
-
-@media only screen and (min-width: 1276px) {
-  .EsteiraContainer {
-      max-width: 700px;
-    }
 }
