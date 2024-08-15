@@ -586,6 +586,11 @@
     margin-bottom: -5px;
   }
 
+  .Main6_Image_Content img {
+    width: 100%;
+    height: auto;
+  }
+
   .Main6Image1 {
     display: none;
   }

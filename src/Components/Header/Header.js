@@ -12,7 +12,7 @@ const MobileMenu = () => {
     <div className={styles.headerMobile}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px', width: '100%' }}>
         <div className={styles.logo}>
-          <img src={Logo} alt="RapidChargeBack" draggable="false" />
+          <img src={Logo} alt="Flucsus" draggable="false" />
         </div>
         <button className={styles.loginbutton} onClick={handleLoginButtonClick}>Login</button>
       </div>
@@ -46,7 +46,7 @@ const DesktopMenu = () => {
 
   return (
     <div className={styles.headerDesktop}>
-      <img onClick={() => scrollToSection('Home')} src={Logo} alt="RapidChargeBack" draggable="false" style={{ userSelect: 'none' }} />
+      <img onClick={navigateToHome} src={Logo} alt="Flucsus" draggable="false" style={{ userSelect: 'none' }} />
       <div className={styles.RightContent} style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '40px'}}>
         <div className={styles.headerDesktopList}>
           <div>

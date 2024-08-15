@@ -21,7 +21,11 @@ const Footer = () => {
   
   const scrollToSection = (id) => {
     navigate(`/#${id}`);
-  };  
+  };
+
+  const navigateToHome = () => {
+    navigate('/');
+  };
 
   return (
     <footer className={styles.Container}>
@@ -40,7 +44,7 @@ const Footer = () => {
         <div style={{backgroundColor: 'rgba(255, 255, 255, 0.40)', height: '1px', borderRadius: '20px', width: '100%'}}/>
         <div className={styles.Middle}>
           <div>
-            <img src={Logo} draggable={false} alt="Logo" />
+            <img src={Logo} draggable={false} alt="Flucsus" onClick={navigateToHome}/>
             <p>FLUCSUS MEIOS DE PAGAMENTO LTDA, uma entidade de direito privado, registrada sob o CNPJ nº 54.192.615/0001-96, com sede na Rua Goiânia, número 251, loja 4, bairro Henrique Jorge, Fortaleza/CE, CEP: 60.510-175 (doravante referida como "FLUCSUS"). A FLUCSUS encontra-se em conformidade com a Lei Geral de Proteção de Dados (LGPD), assegurando que os tratamentos de dados e os processos de negócios sejam realizados de forma adequada e transparente, conforme estabelecido em nossa Política de Privacidade e Proteção de Dados Pessoais.</p>
           </div>
           <div className={styles.List}>
