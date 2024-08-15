@@ -17,15 +17,18 @@ const EsteiraLogos = () => {
   useEffect(() => {
     const isMobile = window.innerWidth <= 450;
     if (isMobile && contentRef.current) {
-      // Simula mouseover
-      const mouseEnterEvent = new Event('mouseenter');
-      contentRef.current.dispatchEvent(mouseEnterEvent);
-
-      // Simula mouseout logo em seguida
+      // Aguardar 3 segundos antes de simular o mouseover e mouseout
       setTimeout(() => {
-        const mouseLeaveEvent = new Event('mouseleave');
-        contentRef.current.dispatchEvent(mouseLeaveEvent);
-      }, 100);
+        // Simula mouseover
+        const mouseEnterEvent = new Event('mouseenter');
+        contentRef.current.dispatchEvent(mouseEnterEvent);
+
+        // Simula mouseout logo em seguida
+        setTimeout(() => {
+          const mouseLeaveEvent = new Event('mouseleave');
+          contentRef.current.dispatchEvent(mouseLeaveEvent);
+        }, 100);
+      }, 3000);
     }
   }, []);
 
