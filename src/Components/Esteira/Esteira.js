@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Esteira.module.css';
 
 import Adoorei from '../../Images/Esteira/adoorei.svg';
@@ -44,4 +44,4 @@ const EsteiraLogos = () => {
   );
 }
 
-export default EsteiraLogos;
+export default memo(EsteiraLogos);

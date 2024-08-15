@@ -19,7 +19,9 @@
   display: flex;
   align-items: center;
   gap: 60px;
-  animation: esteira 15s linear infinite;
+  animation: move 15s linear infinite;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .EsteiraContainer img {
@@ -27,7 +29,7 @@
   flex-shrink: 0;
 }
 
-@keyframes esteira {
+@keyframes move {
   0% {
     transform: translateX(60px);
   }
