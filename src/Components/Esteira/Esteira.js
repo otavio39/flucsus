@@ -16,6 +16,9 @@ import WebHooks from '../../Images/Esteira/webhooks.svg';
 const EsteiraLogos = () => {
   return (
     <div className={styles.Esteira}>
+      <div>
+        <h3 className={styles.titleblack}>Empresas que confiam</h3>
+      </div>
       <div className={styles.EsteiraContainer}>
         <div className={styles.EsteiraContent}>
             <div>
@@ -51,4 +54,3 @@ const EsteiraLogos = () => {
 }
 
 export default EsteiraLogos;
-

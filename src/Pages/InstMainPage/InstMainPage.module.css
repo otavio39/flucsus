@@ -123,7 +123,10 @@
   }
 
   .Main3 {
-    padding: 50px 0 50px 0;
+    max-width: 1350px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
   .Main4 {
@@ -206,7 +209,6 @@
   }
 
   .Main3 {
-    padding: 30px 0 30px 0;
   }
 
   .Main3_Container h3 {
