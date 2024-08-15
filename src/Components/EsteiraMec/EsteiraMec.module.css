@@ -6,7 +6,6 @@
     -ms-overflow-style: none;
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
     margin-top: -10px;
-    display: none;
 }
 
 .Esteira::-webkit-scrollbar {

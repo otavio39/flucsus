@@ -7,7 +7,6 @@
   display: flex;
   overflow: hidden;
   mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); /* Prefix para Safari */
 }
 
 .EsteiraContent {
@@ -21,7 +20,6 @@
   align-items: center;
   gap: 60px;
   animation: esteira 15s linear infinite;
-  -webkit-animation: esteira 15s linear infinite; /* Prefix para Safari */
 }
 
 .EsteiraContainer img {
@@ -38,17 +36,14 @@
   }
 }
 
-@-webkit-keyframes esteira { /* Prefix para Safari */
-  0% {
-    -webkit-transform: translateX(60px);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
 @media only screen and (min-width: 1276px) {
   .Esteira {
       max-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+  .Esteira {
+      display: none;
   }
 }
