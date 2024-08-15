@@ -19,7 +19,7 @@
     padding-left: 20px;
 }
 
-@media only screen and (min-width: 451px) {
+@media only screen and (min-width: 700px) {
     .Esteira {
         display: none;
     }
