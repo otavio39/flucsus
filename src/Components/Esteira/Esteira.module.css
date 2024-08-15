@@ -1,3 +1,4 @@
+/* Esteira.module.css */
 .Esteira {
   width: 100%;
 }
@@ -6,6 +7,8 @@
   user-select: none;
   display: flex;
   overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); /* Compatibilidade com Safari */
 }
 
 .EsteiraContent {
@@ -20,7 +23,8 @@
   gap: 60px;
   animation: esteira 15s linear infinite;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Compatibilidade com Safari */
+  will-change: transform; /* Sugerir aceleração de hardware */
 }
 
 .EsteiraContainer img {
@@ -33,13 +37,18 @@
     transform: translateX(60px);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-calc(100% + 60px)); /* Ajuste para cobrir toda a largura */
   }
 }
 
 @media only screen and (min-width: 1276px) {
   .Esteira {
-      max-width: 700px;
-    }
+    max-width: 700px;
+  }
 }
 
+@media only screen and (max-width: 450px) {
+  .Esteira {
+    display: none;
+  }
+}
