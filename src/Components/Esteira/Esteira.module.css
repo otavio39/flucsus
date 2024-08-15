@@ -19,6 +19,8 @@
   align-items: center;
   gap: 60px;
   animation: esteira 15s linear infinite;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .EsteiraContainer img {
