@@ -15,7 +15,7 @@ import Main4Image from '../../Images/Main4ImageMedium.png'
 import ProgressBar from '../../Images/ProgressBar.png'
 import ProgressBarMini from '../../Images/ProgressBarMini.svg'
 import Main6Image from '../../Images/Main6Image.png'
-import Main6ImageMini from '../../Images/Main6ImageMini.png'
+import Main6ImageMini from '../../Images/Main6ImageMini.svg'
 import Main7Image from '../../Images/Main7Image.png'
 
 function App() {
