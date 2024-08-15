@@ -4,6 +4,7 @@ import styles from './InstMainPage.module.css';
 import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
 import Esteira from '../../Components/Esteira/Esteira';
+import EsteiraMec from '../../Components/EsteiraMec/EsteiraMec';
 import Cards from '../../Components/Cards/Cards';
 import Seguranca from '../../Images/Cards/seguranca.svg';
 import Taxas from '../../Images/Cards/taxas.svg';
@@ -78,7 +79,9 @@ function App() {
       </div>
       <div className={styles.Main3} id='Parceiros'>
         <div className={styles.Main3_Container}>
+          <h3 className={styles.titleblack}>Facilitamos seu crescimento com nossos <strong style={{ fontWeight: '900' }}>parceiros e integrações</strong></h3>
           <Esteira/>
+          <EsteiraMec/>
         </div>
       </div>
       <div className={styles.Main4}>

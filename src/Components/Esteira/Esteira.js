@@ -23,6 +23,9 @@ const EsteiraLogos = () => {
                 <img src={Adoorei} draggable="false" alt="Adoorei" />
                 <img src={Googleads} draggable="false" alt="Googleads" />
                 <img src={Meta} draggable="false" alt="Meta" />
+                <img src={Tiktok} draggable="false" alt="Tiktok" />
+                <img src={Utmify} draggable="false" alt="Utmify" />
+                <img src={Vega} draggable="false" alt="Vega" />
             </div>
             <div>
                 <img src={Shopify} draggable="false" alt="Shopify" />
@@ -31,6 +34,9 @@ const EsteiraLogos = () => {
                 <img src={Adoorei} draggable="false" alt="Adoorei" />
                 <img src={Googleads} draggable="false" alt="Googleads" />
                 <img src={Meta} draggable="false" alt="Meta" />
+                <img src={Tiktok} draggable="false" alt="Tiktok" />
+                <img src={Utmify} draggable="false" alt="Utmify" />
+                <img src={Vega} draggable="false" alt="Vega" />
             </div>
         </div>
       </div>
