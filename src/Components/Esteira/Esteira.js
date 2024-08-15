@@ -14,9 +14,6 @@ import Voxuy from '../../Images/Esteira/voxuy.svg';
 const EsteiraLogos = () => {
   return (
     <div className={styles.Esteira}>
-      <div>
-        <h3 className={styles.titleblack}>Empresas que confiam</h3>
-      </div>
       <div className={styles.EsteiraContainer}>
         <div className={styles.EsteiraContent}>
             <div>
@@ -26,9 +23,6 @@ const EsteiraLogos = () => {
                 <img src={Adoorei} draggable="false" alt="Adoorei" />
                 <img src={Googleads} draggable="false" alt="Googleads" />
                 <img src={Meta} draggable="false" alt="Meta" />
-                <img src={Tiktok} draggable="false" alt="Tiktok" />
-                <img src={Utmify} draggable="false" alt="Utmify" />
-                <img src={Vega} draggable="false" alt="Vega" />
             </div>
             <div>
                 <img src={Shopify} draggable="false" alt="Shopify" />
@@ -37,9 +31,6 @@ const EsteiraLogos = () => {
                 <img src={Adoorei} draggable="false" alt="Adoorei" />
                 <img src={Googleads} draggable="false" alt="Googleads" />
                 <img src={Meta} draggable="false" alt="Meta" />
-                <img src={Tiktok} draggable="false" alt="Tiktok" />
-                <img src={Utmify} draggable="false" alt="Utmify" />
-                <img src={Vega} draggable="false" alt="Vega" />
             </div>
         </div>
       </div>

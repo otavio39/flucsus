@@ -1,51 +1,25 @@
-.titleblack {
-  color: black;
-  font-weight: bold;
-  line-height: 1.2;
-  margin: 0;
+.Esteira {
+  width: 100%;
 }
-
-@media only screen and (min-width: 451px) {
-  .titleblack {
-      font-size: 35px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .titleblack {
-      font-size: 28px;
-  }
-}
-
-
-/*Classes Padrões Acima*/
-
-
-
-
 
 .EsteiraContainer {
   user-select: none;
   display: flex;
   overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
 }
 
 .EsteiraContent {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 60px;
 }
 
 .EsteiraContent > div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 60px;
   animation: esteira 15s linear infinite;
-}
-
-.EsteiraContent:hover > div {
-  animation-play-state: paused; /* Pausar a animação quando o usuário passar o mouse */
 }
 
 .EsteiraContainer img {
@@ -55,28 +29,15 @@
 
 @keyframes esteira {
   0% {
-      transform: translateX(20px);
+    transform: translateX(60px);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
 @media only screen and (min-width: 1276px) {
   .Esteira {
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-  }
-
-  .Esteira h3 {
-      width: 230px;
-  }
-}
-
-@media only screen and (max-width: 1275px) {
-  .Esteira h3 {
-      text-align: center;
-      margin-bottom: 30px;
-  }
+      max-width: 700px;
+    }
 }
