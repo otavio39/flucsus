@@ -1,26 +1,30 @@
 .Esteira {
     overflow: hidden;
     width: 100%;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
     margin-top: -10px;
-}
-
-.Esteira::-webkit-scrollbar {
-    width: 0;
 }
 
 .Esteira > div {
     display: flex;
     align-items: center;
     gap: 50px;
-    padding-left: 20px;
+    width: max-content; /* Define que a largura seja a soma dos conteúdos */
+    animation: esteira 15s linear infinite; /* Ajuste o tempo da animação conforme necessário */
 }
 
 @media only screen and (min-width: 451px) {
     .Esteira {
         display: none;
     }
+}
+
+@keyframes esteira {
+   0% {
+    transform: translateX(25px); /* Começa fora da tela à direita */
+   } 
+
+   100% {
+    transform: translateX(-50%); /* Termina fora da tela à esquerda */
+   }
 }
