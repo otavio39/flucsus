@@ -17,7 +17,8 @@
     align-items: center;
     gap: 50px;
     padding-left: 20px;
-    animation: move 5s linear infinite;
+    animation: move 10s linear infinite;
+    width: max-content;
 }
 
 @media only screen and (min-width: 451px) {
@@ -32,6 +33,6 @@
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-40%);
     }
 }
