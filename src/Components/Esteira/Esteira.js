@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './Esteira.module.css';
 
 import Adoorei from '../../Images/Esteira/adoorei.svg';
@@ -12,10 +12,23 @@ import Vega from '../../Images/Esteira/vega.svg';
 import Voxuy from '../../Images/Esteira/voxuy.svg';
 
 const EsteiraLogos = () => {
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 450;
+    if (isMobile && contentRef.current) {
+      // Simula dois cliques consecutivos
+      contentRef.current.click();
+      setTimeout(() => {
+        contentRef.current.click();
+      }, 100);
+    }
+  }, []);
+
   return (
     <div className={styles.Esteira}>
       <div className={styles.EsteiraContainer}>
-        <div className={styles.EsteiraContent}>
+        <div className={styles.EsteiraContent} ref={contentRef}>
             <div>
                 <img src={Shopify} draggable="false" alt="Shopify" />
                 <img src={Unicodrop} draggable="false" alt="Unicodrop" />
