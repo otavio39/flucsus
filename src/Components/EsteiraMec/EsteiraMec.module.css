@@ -6,6 +6,7 @@
     -ms-overflow-style: none;
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
     margin-top: -10px;
+    display: none;
 }
 
 .Esteira::-webkit-scrollbar {
@@ -17,22 +18,10 @@
     align-items: center;
     gap: 50px;
     padding-left: 20px;
-    animation: move 10s linear infinite;
-    width: max-content;
 }
 
 @media only screen and (min-width: 451px) {
     .Esteira {
         display: none;
-    }
-}
-
-@keyframes move {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-40%);
     }
 }
