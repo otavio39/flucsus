@@ -16,7 +16,7 @@ const EsteiraLogos = () => {
     const esteiraContent = document.querySelector(`.${styles.EsteiraContent}`);
 
     if (esteiraContent) {
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 3; i++) {
         setTimeout(() => {
           // Adiciona a classe de pausa
           esteiraContent.classList.add(styles.active);
@@ -26,7 +26,7 @@ const EsteiraLogos = () => {
             esteiraContent.classList.remove(styles.active);
           }, 50); // Remove a classe 'active' após 50ms
           
-        }, i * 1000); // 1000ms = 1 segundo de intervalo entre os cliques
+        }, i * 200); // 1000ms = 1 segundo de intervalo entre os cliques
       }
     }
   }, []);
