@@ -24,10 +24,6 @@
   backface-visibility: hidden;
 }
 
-.EsteiraContent:active > div, .EsteiraContent.active > div {
-  animation-play-state: paused;
-}
-
 .EsteiraContainer img {
   max-width: 150px;
   flex-shrink: 0;
@@ -40,6 +36,12 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .EsteiraContent:active > div, .EsteiraContent.active > div {
+    animation-play-state: paused;
   }
 }
 
