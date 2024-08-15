@@ -160,7 +160,7 @@ function App() {
             </div>
             <div className={styles.Main6_Image_Content}>
               <img src={Main6Image} draggable={false} className={styles.Main6Image1}/>
-              <img src={Main6Image} draggable={false} className={styles.Main6ImageMini2}/>
+              <img src={Main6ImageMini} draggable={false} className={styles.Main6ImageMini2}/>
             </div>
           </div>
         </div>

@@ -10,8 +10,9 @@ import Unicodrop from '../../Images/Esteira/unicodrop.svg';
 import Utmify from '../../Images/Esteira/utmify.svg';
 import Vega from '../../Images/Esteira/vega.svg';
 import Voxuy from '../../Images/Esteira/voxuy.svg';
+import Rapid from '../../Images/Esteira/rapid.svg';
 
-const logoImages = [Shopify, Unicodrop, Voxuy, Adoorei, Googleads, Meta, Tiktok, Utmify, Vega];
+const logoImages = [Shopify, Unicodrop, Voxuy, Rapid, Adoorei, Googleads, Meta, Tiktok, Utmify, Vega];
 
 const EsteiraLogos = () => {
   useEffect(() => {
