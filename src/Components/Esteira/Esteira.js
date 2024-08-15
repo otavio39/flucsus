@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import styles from './Esteira.module.css';
 
 import Adoorei from '../../Images/Esteira/adoorei.svg';
@@ -12,30 +12,23 @@ import Vega from '../../Images/Esteira/vega.svg';
 import Voxuy from '../../Images/Esteira/voxuy.svg';
 
 const EsteiraLogos = () => {
-  const contentRef = useRef(null);
-
   useEffect(() => {
-    const isMobile = window.innerWidth <= 450;
-    if (isMobile && contentRef.current) {
-      // Aguardar 3 segundos antes de simular o mouseover e mouseout
-      setTimeout(() => {
-        // Simula mouseover
-        const mouseEnterEvent = new Event('mouseenter');
-        contentRef.current.dispatchEvent(mouseEnterEvent);
-
-        // Simula mouseout logo em seguida
+    const esteiraContent = document.querySelector(`.${styles.EsteiraContent}`);
+    
+    if (esteiraContent) {
+      for (let i = 0; i < 10; i++) {
         setTimeout(() => {
-          const mouseLeaveEvent = new Event('mouseleave');
-          contentRef.current.dispatchEvent(mouseLeaveEvent);
-        }, 100);
-      }, 3000);
+          esteiraContent.click();
+        }, i * 1000); // 1000ms = 1 segundo de intervalo entre os cliques
+      }
     }
   }, []);
+
 
   return (
     <div className={styles.Esteira}>
       <div className={styles.EsteiraContainer}>
-        <div className={styles.EsteiraContent} ref={contentRef}>
+        <div className={styles.EsteiraContent}>
             <div>
                 <img src={Shopify} draggable="false" alt="Shopify" />
                 <img src={Unicodrop} draggable="false" alt="Unicodrop" />

@@ -22,7 +22,7 @@
   animation: esteira 15s linear infinite;
 }
 
-.EsteiraContent:hover > div {
+.EsteiraContent:active  > div {
   animation-play-state: paused; /* Pausar a animação quando o usuário passar o mouse */
 }
 
