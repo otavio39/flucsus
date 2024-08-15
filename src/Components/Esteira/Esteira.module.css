@@ -1,5 +1,29 @@
+.titleblack {
+  color: #212121;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media only screen and (min-width: 451px) {
+  .titleblack {
+      font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .titleblack {
+      font-size: 25px;
+  }
+}
+
+
+/*Classes Padrões Acima*/
+
+
+
+
 .Esteira {
-  max-width: 100%;
+  width: 100%;
 }
 
 .EsteiraContainer {
@@ -12,16 +36,14 @@
 .EsteiraContent {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 20px;
 }
 
 .EsteiraContent > div {
   display: flex;
   align-items: center;
-  gap: 60px;
-  animation: move 15s linear infinite;
-  transform: translateZ(0);
-  will-change: transform;
+  gap: 20px;
+  animation: esteira 15s linear infinite;
 }
 
 .EsteiraContainer img {
@@ -29,17 +51,36 @@
   flex-shrink: 0;
 }
 
-@keyframes move {
+@keyframes esteira {
   0% {
-    transform: translateX(60px);
+      transform: translateX(20px);
   }
   100% {
-    transform: translateX(-100%);
+      transform: translateX(-100%);
   }
 }
 
 @media only screen and (min-width: 1276px) {
   .Esteira {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+  }
+
+  .Esteira h3 {
+      width: 230px;
+  }
+}
+
+@media only screen and (max-width: 1275px) {
+  .Esteira h3 {
+      text-align: center;
+      margin: 0 auto 40px auto;
+  }
+}
+
+@media only screen and (min-width: 1276px) {
+  .EsteiraContainer {
       max-width: 700px;
     }
 }
