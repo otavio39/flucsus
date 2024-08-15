@@ -155,12 +155,12 @@ function App() {
             <div className={styles.Main6_Text_Content}>
               <h3 className={styles.titlewhite}>Na Flucsus, você conta com uma <strong style={{ fontWeight: '900' }}>alta taxa de aprovação comprovada!</strong></h3>
               <img src={ProgressBar} draggable={false} style={{marginLeft: '-10px'}} className={styles.ProgressBar}/>
-              <img src={ProgressBarMini} draggable={false} style={{marginLeft: '-10px'}} className={styles.ProgressBarMini}/>
+              <img src={ProgressBar} draggable={false} style={{marginLeft: '-10px'}} className={styles.ProgressBarMini}/>
               <p className={styles.paragraphwhite} style={{ fontWeight: '900' }}>Conversão testada, comprovada e garantida</p>
             </div>
             <div className={styles.Main6_Image_Content}>
               <img src={Main6Image} draggable={false} className={styles.Main6Image1}/>
-              <img src={Main6ImageMini} draggable={false} className={styles.Main6ImageMini2}/>
+              <img src={Main6Image} draggable={false} className={styles.Main6ImageMini2}/>
             </div>
           </div>
         </div>
