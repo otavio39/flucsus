@@ -22,6 +22,10 @@
   animation: esteira 15s linear infinite;
 }
 
+.EsteiraContent:hover > div {
+  animation-play-state: paused; /* Pausar a animação quando o usuário passar o mouse */
+}
+
 .EsteiraContainer img {
   max-width: 150px;
   flex-shrink: 0;
@@ -40,10 +44,4 @@
   .Esteira {
       max-width: 700px;
     }
-}
-
-@media only screen and (max-width: 450px) {
-  .Esteira {
-      display: none;
-  }
 }
