@@ -14,29 +14,9 @@ import Smsfunnel from '../../Images/Esteira/smsfunnel.svg';
 import WebHooks from '../../Images/Esteira/webhooks.svg';
 
 const EsteiraLogos = () => {
-  const esteiraRef = useRef(null);
-
-  useEffect(() => {
-    const handleScrollToCenter = () => {
-      if (esteiraRef.current) {
-        const scrollWidth = esteiraRef.current.scrollWidth;
-        const clientWidth = esteiraRef.current.clientWidth;
-
-        if (scrollWidth > clientWidth) {
-          esteiraRef.current.scrollLeft = (scrollWidth - clientWidth) / 2;
-        }
-      }
-    };
-
-    // Adiciona um pequeno atraso para garantir que o layout esteja completo antes de ajustar o scroll
-    const timeoutId = setTimeout(handleScrollToCenter, 600);
-
-    // Cleanup function to clear timeout if the component unmounts
-    return () => clearTimeout(timeoutId);
-  }, []);
 
   return (
-    <div className={styles.Esteira} ref={esteiraRef}>
+    <div className={styles.Esteira} >
         <div>
             <img src={Smsfunnel} draggable="false" alt="Smsfunnel" />
             <img src={Unicodrop} draggable="false" alt="Unicodrop" />
