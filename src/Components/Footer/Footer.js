@@ -61,12 +61,6 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <div onClick={() => navigate('/politica-de-privacidade')}>
-                  <h4 onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)}>Política de privacidade</h4>
-                  <div className={`${styles.bar} ${isHovered4 ? styles.barAnimation : ""}`} />
-                </div>
-            </div>
-            <div>
                 <div onClick={() => navigate('/termos-de-uso')}>
                   <h4 onMouseEnter={() => setIsHovered5(true)} onMouseLeave={() => setIsHovered5(false)}>Termos de uso</h4>
                   <div className={`${styles.bar} ${isHovered5 ? styles.barAnimation : ""}`} />

@@ -10,7 +10,6 @@ function App() {
       <Routes>
         <Route path="/" element={<InstMainPage />} />
         <Route path="/termos-de-uso" element={<TermosDeUsoPage />} />
-        <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
         <Route path="*" element={<InstMainPage />} />
       </Routes>
     </div>
