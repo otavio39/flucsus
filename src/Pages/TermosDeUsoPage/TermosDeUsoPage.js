@@ -22,7 +22,7 @@ function App() {
                         <a href="#termos-de-uso"><p>Termos de Uso</p></a>
                         <a href="#politica-de-privacidade"><p>Política de Privacidade e Proteção de Dados</p></a>
                         <a href="#KYC"><p>KYC</p></a>
-                        <a href="#Antifraude"><p>Normativos de Compliance</p></a>
+                        <a href="#Antifraude"><p>Antifraude</p></a>
                         <a href="#PLD"><p>PLD</p></a>
                     </div>
 
