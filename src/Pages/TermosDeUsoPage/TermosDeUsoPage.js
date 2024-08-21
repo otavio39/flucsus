@@ -29,7 +29,7 @@ function App() {
                         <h2>Termos de Uso - Plataforma Flucsus</h2>
                         <p><strong>Versão 01/08/2024</strong></p>
 
-                        <h3>1. DO CADASTRO DE USUÁRIO</h3>
+                        <h3>1. Do Cadastro De Usuário</h3>
                         <p>
                             1.1 Para acesso à Plataforma Flucsus, o usuário deverá obrigatoriamente efetuar o cadastro fornecendo os seus dados de modo exato, preciso e verdadeiro, dentre eles nome/razão social, endereço de e-mail válido, CPF/CNPJ ativo, nome do representante legal, e endereço.
                         </p>
@@ -40,7 +40,7 @@ function App() {
                             1.1.2 Autorização para consulta ao SPC e banco de dados - os usuários autorizam a Flucsus a realizar consultas gerais relativas ao CNPJ e CPF, perante a Junta Comercial e Órgãos Estatais, no SPC/SERASA, mídias sociais, sistemas de banco de dados, entre outras pesquisas necessárias, para fins de aprovação do cadastro do usuário e manutenção da conta Flucsus.
                         </p>
 
-                        <h3>2. DO CADASTRO DE PRODUTORES, CO-PRODUTORES E AFILIADOS</h3>
+                        <h3>2. Do Cadastro De Produtores, Co-produtores E Afiliados</h3>
                         <p>
                             2.1 O cadastro de produtor, co-produtor e afiliado, segue as regras do cadastro de usuário.
                         </p>
@@ -48,7 +48,7 @@ function App() {
                             2.2 Os produtores, co-produtores e afiliados terão seu próprio cadastro e login, bem como são responsáveis por qualquer atividade conduzida por meio da sua conta na Plataforma, isentando a Flucsus de quaisquer danos, patrimoniais ou extrapatrimoniais, resultantes do uso indevido da sua conta por terceiros.
                         </p>
 
-                        <h3>3. DAS FUNCIONALIDADES E OBRIGAÇÕES</h3>
+                        <h3>3. Das Funcionalidades E Obrigações</h3>
                         <p>
                             3.1 A Flucsus é uma Plataforma de tecnologia de serviços de vendas online e consiste num sistema capaz de intermediar o processamento eletrônico de dados de transações de pagamento de produtos digitais e físicos, de forma totalmente segura e baseada em protocolo HTTPS, permitindo a configuração de múltiplos usuários compartilhando a mesma infraestrutura de processamento, com total isolamento e tem como principais características:
                         </p>
@@ -60,7 +60,7 @@ function App() {
                             <li>Acesso ao relatório de todas as transações efetuadas no período, com identificação daquelas já aprovadas e já pagas.</li>
                         </ul>
 
-                        <h3>4. DO PRAZO</h3>
+                        <h3>4. Do Prazo</h3>
                         <p>
                             4.1 O presente Contrato é celebrado pelo prazo de 30 (trinta) dias, iniciando-se a partir da ativação da conta Flucsus.
                         </p>
@@ -68,42 +68,42 @@ function App() {
                             4.2 Findo o prazo inicial de vigência e não havendo manifestação contrária por escrito de nenhuma das Partes antes deste prazo e nos termos deste Contrato, o presente fica automaticamente e sucessivamente renovado por iguais e sucessivos períodos, exceto se qualquer uma das partes notificar a outra, por escrito, manifestando sua opção pelo término, conforme regras expostas no capítulo de rescisão.
                         </p>
 
-                        <h3>5. DO PREÇO</h3>
+                        <h3>5. Do Preço</h3>
                         <p>
                             5.1 As taxas cobradas pela Flucsus podem ser consultadas na Tabela de Tarifas disponível na área logada do usuário.
                         </p>
 
-                        <h3>6. DO PROCESSAMENTO DE PAGAMENTOS E TRANSFERÊNCIAS DE VALORES</h3>
+                        <h3>6. Do Processamento De Pagamentos E Transferências De Valores</h3>
                         <p>
                             6.1 Os valores transacionados na Conta Flucsus serão disponibilizados após solicitação de saque, diretamente na conta bancária da pessoa física ou jurídica vinculada ao cadastro na Plataforma, mediante pagamento das taxas aplicáveis, aprovação e preenchimento obrigatório dos requisitos mínimos.
                         </p>
 
-                        <h3>7. DAS VENDAS CANCELADAS E MEDIDAS PREVENTIVAS</h3>
+                        <h3>7. Das Vendas Canceladas E Medidas Preventivas</h3>
                         <p>
                             7.1 O usuário assume total responsabilidade pelas vendas canceladas, chargebacks, contestações e estornos, processados na sua conta Flucsus.
                         </p>
 
-                        <h3>8. CONTAS INATIVAS</h3>
+                        <h3>8. Contas Inativas</h3>
                         <p>
                             8.1 As contas que permanecerem sem utilização por 2 anos, serão consideradas inativas e a conta e seu conteúdo estarão qualificados para exclusão.
                         </p>
 
-                        <h3>9. OBRIGAÇÕES GERAIS DOS USUÁRIOS</h3>
+                        <h3>9. Obrigações Gerais Dos Usuários</h3>
                         <p>
                             9.1 O usuário é responsável por manter a segurança e confidencialidade de suas informações de login e por todas as atividades realizadas sob sua conta.
                         </p>
 
-                        <h3>10. RESCISÃO CONTRATUAL</h3>
+                        <h3>10. Rescisão Contratual</h3>
                         <p>
                             10.1 A Flucsus pode interromper ou suspender o acesso do usuário à Plataforma e seu suporte a qualquer tempo, em casos de inadimplência ou violação destes Termos de Uso.
                         </p>
 
-                        <h3>11. DA CONFIDENCIALIDADE E PROTEÇÃO DE DADOS</h3>
+                        <h3>11. Da Confidencialidade E Proteção De Dados</h3>
                         <p>
                             11.1 As partes concordam em manter a confidencialidade das informações trocadas durante a vigência deste contrato e após seu término, pelo prazo de 5 anos.
                         </p>
 
-                        <h3>12. DISPOSIÇÕES GERAIS</h3>
+                        <h3>12. Disposições Gerais</h3>
                         <p>
                             12.1 O presente contrato obriga, além das partes, seus sucessores, qualquer que seja a forma de sucessão, em todos os direitos e obrigações nele assumidas.
                         </p>
