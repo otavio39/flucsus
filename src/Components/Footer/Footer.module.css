@@ -133,8 +133,8 @@
 
 @media only screen and (min-width: 1150px) {
     .List {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 0 100px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0 80px;
     }
 }
 
