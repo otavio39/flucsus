@@ -21,8 +21,9 @@ function App() {
                     <div className={styles.navLinksContainer}>
                         <a href="#termos-de-uso"><p>Termos de Uso</p></a>
                         <a href="#politica-de-privacidade"><p>Política de Privacidade e Proteção de Dados</p></a>
-                        <a href="#manual-de-cadastro"><p>Manual de Cadastro e Credenciamento</p></a>
-                        <a href="#normativos-de-compliance"><p>Normativos de Compliance</p></a>
+                        <a href="#KYC"><p>KYC</p></a>
+                        <a href="#Antifraude"><p>Normativos de Compliance</p></a>
+                        <a href="#PLD"><p>PLD</p></a>
                     </div>
 
                     <section id="termos-de-uso">
@@ -201,7 +202,7 @@ function App() {
                         <p>Fortaleza/CE, quinta-feira, 1 de agosto de 2024.</p>
                     </section>
 
-                    <section style={{ paddingTop: '30px', marginTop: '70px' }} id="manual-de-cadastro">
+                    <section style={{ paddingTop: '30px', marginTop: '70px' }} id="KYC">
                         <h2>Manual de Cadastro e Credenciamento de Clientes – “Know Your Customer – KYC”</h2>
 
                         <h3>1. Apresentação</h3>
@@ -369,7 +370,7 @@ function App() {
                         </p>
                     </section>
 
-                    <section style={{ paddingTop: '30px', marginTop: '70px' }} id="normativos-de-compliance">
+                    <section style={{ paddingTop: '30px', marginTop: '70px' }} id="Antifraude">
                         <h2>Principais Normativos de Compliance e Política de Prevenção e Combate à Lavagem de Dinheiro e ao Financiamento ao Terrorismo</h2>
 
                         <h3>Apresentação</h3>
@@ -555,6 +556,55 @@ function App() {
                         <h3>Aprovação e Vigência</h3>
                         <p>
                             A presente Política foi aprovada pela alta administração da Flucsus Meios de Pagamento LTDA, entrando em vigência na data da sua aprovação. A presente Política tem prazo de vigência indeterminado, podendo ser substituída apenas por uma versão atualizada.
+                        </p>
+                    </section>
+                    <section style={{ paddingTop: '30px', marginTop: '70px' }} id="PLD">
+                        <h2>Manual de Avaliação Periódica da Auditoria Interna – PLD/FT</h2>
+
+                        <h3>Apresentação</h3>
+                        <p>
+                            A avaliação da auditoria interna é essencial para garantir o cumprimento das exigências e recomendações das práticas de PLD/FT na Flucsus Meios de Pagamento LTDA. Esse processo busca verificar a conformidade com as regulamentações externas e os controles internos de prevenção à lavagem de dinheiro e combate ao financiamento do terrorismo. A auditoria identifica itens em desconformidade e oportunidades de melhoria, revisando sistematicamente a eficácia da gestão de PLD/FT adotada pela Flucsus, contribuindo para seu aprimoramento contínuo.
+                        </p>
+
+                        <h3>Objetivo</h3>
+                        <p>
+                            A avaliação periódica tem como objetivo assegurar a efetividade das políticas, controles e procedimentos de prevenção à lavagem de dinheiro e combate ao financiamento do terrorismo, conforme os padrões de controle e monitoramento exigidos pela regulamentação vigente e práticas adequadas ao porte da Flucsus Meios de Pagamento LTDA.
+                        </p>
+
+                        <h3>Normas de Referência</h3>
+                        <p>
+                            A Flucsus Meios de Pagamento LTDA se compromete a respeitar toda a legislação relacionada ao tema, bem como as normas, circulares e posicionamentos emitidos pelo BACEN e pelo COAF, incluindo:
+                        </p>
+                        <ul>
+                            <li>Lei nº 9.613, de 3 de março de 1998: Dispõe sobre os crimes de “lavagem” ou ocultação de bens, direitos e valores e cria o Conselho de Controle de Atividades Financeiras - COAF.</li>
+                            <li>Lei nº 12.846, de 1º de agosto de 2013: Trata da responsabilização administrativa e civil de pessoas jurídicas por atos contra a administração pública, nacional ou estrangeira.</li>
+                            <li>BACEN Circular nº 3.978 de 23/01/2020: Estabelece políticas, procedimentos e controles internos a serem adotados pelas instituições autorizadas pelo Banco Central do Brasil.</li>
+                            <li>BACEN Carta Circular nº 4.001 de 29/01/2020: Divulga operações e situações que podem configurar indícios de crimes de “lavagem” ou ocultação de bens e financiamento ao terrorismo.</li>
+                            <li>Resolução CVM nº 50, de 31/08/2021: Regula a prevenção à lavagem de dinheiro, financiamento ao terrorismo e à proliferação de armas de destruição em massa.</li>
+                            <li>Decreto nº 11.129 de 2022: Regulamenta a Lei nº 12.846, sobre a responsabilização de pessoas jurídicas por atos contra a administração pública.</li>
+                        </ul>
+
+                        <h3>Planejamento / Execução da Auditoria PLD/FT</h3>
+                        <p>
+                            O modelo de avaliação de efetividade em relação à prevenção à lavagem de dinheiro e combate ao terrorismo deve integrar o Planejamento Anual da Auditoria Interna da Flucsus. A avaliação da Auditoria Independente com foco em PLD/CFT deve abordar, no mínimo, os seguintes temas:
+                        </p>
+                        <ul>
+                            <li>Cultura organizacional e capacitação voltada à PLD/CFT, adequada ao porte e perfil de negócios da Flucsus.</li>
+                            <li>Existência de Políticas e Procedimentos formais, atualizados e aprovados pela diretoria.</li>
+                            <li>Procedimentos de monitoramento e análise de comunicação ao COAF, ou Unidade de Inteligência Financeira (UIF), de situações que configurem indícios de PLD/CFT.</li>
+                            <li>Políticas e ações internas de treinamento em PLD/CFT para funcionários e colaboradores.</li>
+                            <li>Adoção de procedimentos de Conheça Seu Cliente (KYC) e Know Your Employee (KYE).</li>
+                            <li>Realização de testes anuais de aderência cadastral.</li>
+                        </ul>
+
+                        <h3>Relatório de Avaliação de Efetividade</h3>
+                        <p>
+                            A Flucsus Meios de Pagamento LTDA emitirá Relatório de Avaliação de Efetividade, conforme a legislação vigente, com uma avaliação detalhada da aplicação das políticas e procedimentos definidos sobre o tema. Com base no Relatório de Auditoria, a Diretoria da Flucsus fornecerá planos e respostas de ação para regularizar os pontos levantados. A Diretoria de Compliance e PLD/FT será responsável pela elaboração do relatório anual de avaliação de efetividade, com o objetivo de revisar e aprimorar continuamente as orientações, procedimentos e controles internos.
+                        </p>
+
+                        <h3>Atualização e Vigência</h3>
+                        <p>
+                            O presente Manual será atualizado sempre que houver alterações legislativas ou regulatórias relevantes ou mudanças no cenário de negócios da Flucsus. Este Manual tem vigência indeterminada, podendo ser substituído apenas por uma versão atualizada.
                         </p>
                     </section>
                 </div>
